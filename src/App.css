@@ -1,14 +1,68 @@
-import Header from "./components/Header";
-
-function App() {
-  return (
-    <div>
-      <Header />
-      <p style={{ textAlign: "center", marginTop: "20px" }}>
-        Let's build this step by step!
-      </p>
-    </div>
-  );
+/* App-specific styles */
+.app-container {
+  padding: 20px;
+  margin-bottom: 40px;
 }
 
-export default App;
+.app-section {
+  margin-bottom: 25px;
+}
+
+.option-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.price-display {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price-amount {
+  font-size: 32px;
+  font-weight: bold;
+  color: #2c7744;
+  margin: 10px 0;
+}
+
+.price-breakdown {
+  margin-top: 15px;
+  text-align: left;
+  padding: 10px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.price-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.price-total {
+  font-weight: bold;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 2px solid #ddd;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .grid-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .price-amount {
+    font-size: 28px;
+  }
+}
